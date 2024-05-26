@@ -1,12 +1,131 @@
+/* ===== СБРОС ДЕФОЛТНЫХ ===== */
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 16px;
-  font-style: norm;
   color: #434455;
   background-color: #ffffff;
 }
-
-ul {
+ul,
+ol {
   list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+/* ===== HEADER STYLES ===== */
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.logo-span {
+  color: #2e2f42;
+}
+.header-menu-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #404bbf;
+}
+.header-contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: #404bbf;
+}
+/* ===== HERO STYLES ===== */
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  background-color: #2e2f42;
+}
+.hero-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+/* ===== WHY US? STYLES ===== */
+.why-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.why-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ===== OUR TAEM STYLES ===== */
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.team-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+/* ===== OUR PORTFOLIO STYLES ===== */
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.portfolio-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ===== FOOTER STYLES ===== */
+.page-footer {
+  background-color: #2e2f42;
+}
+.logo-white {
+  color: #f4f4fd;
+}
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
