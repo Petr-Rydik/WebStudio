@@ -5,16 +5,48 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
 }
-
 button {
   cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15;
 }
 .section-title {
   font-weight: 700;
@@ -25,6 +57,25 @@ button {
   color: #2e2f42;
 }
 /* ===== HEADER STYLES ===== */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.flex-all-header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-menu {
+  display: flex;
+  gap: 24px;
+}
+.header-contact-list {
+  display: flex;
+  gap: 40px;
+}
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -32,6 +83,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .logo-span {
   color: #2e2f42;
@@ -41,10 +93,14 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #404bbf;
+}
+.header-contact-list {
+  padding: 24px 0;
 }
 .header-contact-link {
   font-size: 16px;
@@ -57,41 +113,92 @@ button {
   color: #404bbf;
 }
 /* ===== HERO STYLES ===== */
+.page-hero {
+  height: 600px;
+  background-color: #2e2f42;
+  padding-top: 188px;
+}
 .hero-title {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  background-color: #2e2f42;
 }
 .hero-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
 /* ===== WHY US? STYLES ===== */
+.page-why {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.why-list {
+  display: flex;
+  gap: 24px;
+}
+.why-item {
+  width: calc((100% - 72px) / 4);
+}
 .why-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .why-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 /* ===== OUR TAEM STYLES ===== */
+.page-team {
+  height: 732px;
+  background-color: #f4f4fd;
+}
+.team-padding {
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 24px; */
+}
+.team-item {
+  /* max-width: calc((100% - 72px) / 4); */
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-foto {
+  margin-bottom: 32px;
+}
 .team-title {
   font-weight: 500;
   font-size: 20px;
@@ -99,6 +206,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-text {
   line-height: 1.5;
