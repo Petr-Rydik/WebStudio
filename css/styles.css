@@ -220,6 +220,26 @@ button {
   text-align: center;
 }
 /* ===== OUR PORTFOLIO STYLES ===== */
+.page-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
