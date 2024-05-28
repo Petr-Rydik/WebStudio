@@ -22,7 +22,7 @@ ol {
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
@@ -46,7 +46,7 @@ button {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15;
+  padding: 0 15px;
 }
 /* .section-title {
   font-weight: 700;
@@ -198,7 +198,7 @@ button {
   width: calc((100% - 72px) / 4);
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+  /* padding: 0px 0px 32px 0px; */
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -218,6 +218,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 32px;
 }
 /* ===== OUR PORTFOLIO STYLES ===== */
 .page-portfolio {
@@ -240,12 +241,21 @@ button {
   column-gap: 24px;
   row-gap: 48px;
 }
+.portfolio-title-paragraf {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
+}
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   line-height: 1.5;
@@ -253,13 +263,21 @@ button {
 }
 /* ===== FOOTER STYLES ===== */
 .page-footer {
+  /* height: 312px; */
   background-color: #2e2f42;
+  padding: 100px 0;
 }
+/* .foot {
+  display: block;
+  margin-bottom: 16px;
+} */
 .logo-white {
   color: #f4f4fd;
 }
 .footer-text {
+  width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
 }
