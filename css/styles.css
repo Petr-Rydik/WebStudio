@@ -114,9 +114,9 @@ button {
 }
 /* ===== HERO STYLES ===== */
 .page-hero {
-  height: 600px;
+  /* height: 600px; */
   background-color: #2e2f42;
-  padding-top: 188px;
+  padding: 188px 0;
 }
 .hero-title {
   width: 496px;
