@@ -72,6 +72,20 @@ button {
   display: flex;
   gap: 24px;
 }
+.studio::after {
+  display: block;
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  margin-top: 21px; /*еденичку берём от border-bottom c pege-header*/
+  /* width: 100%;
+  left: 0;
+  bottom: -1;
+  height: 4px; */
+}
 .header-contact-list {
   display: flex;
   gap: 40px;
@@ -176,9 +190,9 @@ button {
 }
 /* ===== OUR TAEM STYLES ===== */
 .page-team {
-  height: 732px;
+  /* height: 732px; */
   background-color: #f4f4fd;
-  /* padding-top: 120px 0; */
+  padding: 120px 0;
 }
 .section-team-title {
   font-weight: 700;
@@ -187,7 +201,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 120px;
+  /* padding-top: 120px; */
   margin-bottom: 76px;
 }
 .team-list {
